@@ -1,0 +1,13 @@
+* {
+	font-family: 'Roboto', sans-serif;
+}
+
+article > p {
+	overflow: hidden;
+	width: 65em;
+}
+
+body {
+    padding-top: 70px;
+    /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
