@@ -30,7 +30,7 @@ function retrieveCards(){
 	$("#ListCardsLink").attr("href", url);
 	$("#ListCardsLink").text(url);
 
-	$.getJSON(url + "/triss-mistress-of-magic", function(data, status){
+	$.getJSON(url + "?limit=2&offset=0", function(data, status){
 		var text = JSON.stringify(data, null, 4);
 		$("#ListCards").text(text);
 	});
