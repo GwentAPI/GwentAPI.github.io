@@ -110,9 +110,11 @@ Modified by Tristan Savaria 14/7/2016
                 <h3>Endpoints</h3>
                 <p>GwentAPI currently support the following endpoints. More will follow.</p>
                 <table class="table table-striped">
-                    <th>URL</th>
-                    <th>Method</th>
-                    <th>Description</th>
+                    <tr>
+                        <th>URL</th>
+                        <th>Method</th>
+                        <th>Description</th>
+                    </tr>
                     <tr>
                         <td>https://api.gwentapi.com/v0/</td>
                         <td>GET</td>
@@ -127,6 +129,21 @@ Modified by Tristan Savaria 14/7/2016
                         <td>https://api.gwentapi.com/v0/cards/:id</td>
                         <td>GET</td>
                         <td>Return a specific card.</td>
+                    </tr>
+                    <tr>
+                        <td>https://api.gwentapi.com/v0/cards/leaders</td>
+                        <td>GET</td>
+                        <td>Return all leader cards.</td>
+                    </tr>
+                    <tr>
+                        <td>https://api.gwentapi.com/v0/cards/factions/:factionID</td>
+                        <td>GET</td>
+                        <td>Return all cards from the corresponding faction.</td>
+                    </tr>
+                    <tr>
+                        <td>https://api.gwentapi.com/v0/cards/rarities/:idRarity</td>
+                        <td>GET</td>
+                        <td>Return all cards from the corresponding rarity.</td>
                     </tr>
                     <tr>
                         <td>https://api.gwentapi.com/v0/cards/:id/artworks</td>
