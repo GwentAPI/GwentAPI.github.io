@@ -203,10 +203,9 @@
                     
                     
                         <section class="sw-responses">
-                                <p><a href="#sw-default-produces">Uses default content-types: </a>
-                                    <span class="label label-default">application/json</span> 
-                                </p>
-                            
+                                <p><span class="label label-default">application/vnd.gwentapi.resource+json</span> 
+                    </p>
+                    
                             <dl>
                                     <dt class="sw-response-200">
                                         200 OK
@@ -292,12 +291,28 @@
                                         </tr>
                                         <tr>
                                             <td>
+                                                name
+                                            <td><p>Query to search for cards with the name starting by the entered value</p>
+                                        </td>
+                                            <td>query</td>
+                                            <td><span class="json-property-type">string</span>
+                                        <span class="json-property-range" title="Value limits"></span>
+                                        
+                                            <span class="json-property-range" title="String length limits">
+                                                    (at least 3 chars)
+                                            </span>
+                                            </td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
                                                 offset
                                             <td><p>Offset of the starting count</p>
                                         </td>
                                             <td>query</td>
                                             <td><span class="json-property-type">integer</span>
-                                        <span class="json-property-range" title="Value limits"></span>
+                                        <span class="json-property-range" title="Value limits">, { x ∈ ℤ | x ≥ 0 }</span>
                                         
                                             </td>
                                             <td>
@@ -308,10 +323,9 @@
                         </section>
                     
                         <section class="sw-responses">
-                                <p><a href="#sw-default-produces">Uses default content-types: </a>
-                                    <span class="label label-default">application/json</span> 
-                                </p>
-                            
+                                <p><span class="label label-default">application/vnd.gwentapi.pagecard+json</span> 
+                    </p>
+                    
                             <dl>
                                     <dt class="sw-response-200">
                                         200 OK
@@ -433,7 +447,7 @@
                                         </td>
                                             <td>query</td>
                                             <td><span class="json-property-type">integer</span>
-                                        <span class="json-property-range" title="Value limits"></span>
+                                        <span class="json-property-range" title="Value limits">, { x ∈ ℤ | x ≥ 0 }</span>
                                         
                                             </td>
                                             <td>
@@ -444,10 +458,9 @@
                         </section>
                     
                         <section class="sw-responses">
-                                <p><a href="#sw-default-produces">Uses default content-types: </a>
-                                    <span class="label label-default">application/json</span> 
-                                </p>
-                            
+                                <p><span class="label label-default">application/vnd.gwentapi.pagecard+json</span> 
+                    </p>
+                    
                             <dl>
                                     <dt class="sw-response-200">
                                         200 OK
@@ -555,7 +568,7 @@
                                         </td>
                                             <td>query</td>
                                             <td><span class="json-property-type">integer</span>
-                                        <span class="json-property-range" title="Value limits"></span>
+                                        <span class="json-property-range" title="Value limits">, { x ∈ ℤ | x ≥ 0 }</span>
                                         
                                             </td>
                                             <td>
@@ -566,10 +579,9 @@
                         </section>
                     
                         <section class="sw-responses">
-                                <p><a href="#sw-default-produces">Uses default content-types: </a>
-                                    <span class="label label-default">application/json</span> 
-                                </p>
-                            
+                                <p><span class="label label-default">application/vnd.gwentapi.pagecard+json</span> 
+                    </p>
+                    
                             <dl>
                                     <dt class="sw-response-200">
                                         200 OK
@@ -691,7 +703,7 @@
                                         </td>
                                             <td>query</td>
                                             <td><span class="json-property-type">integer</span>
-                                        <span class="json-property-range" title="Value limits"></span>
+                                        <span class="json-property-range" title="Value limits">, { x ∈ ℤ | x ≥ 0 }</span>
                                         
                                             </td>
                                             <td>
@@ -702,10 +714,9 @@
                         </section>
                     
                         <section class="sw-responses">
-                                <p><a href="#sw-default-produces">Uses default content-types: </a>
-                                    <span class="label label-default">application/json</span> 
-                                </p>
-                            
+                                <p><span class="label label-default">application/vnd.gwentapi.card+json</span> 
+                    </p>
+                    
                             <dl>
                                     <dt class="sw-response-200">
                                         200 OK
@@ -827,7 +838,7 @@
                                         </td>
                                             <td>query</td>
                                             <td><span class="json-property-type">integer</span>
-                                        <span class="json-property-range" title="Value limits"></span>
+                                        <span class="json-property-range" title="Value limits">, { x ∈ ℤ | x ≥ 0 }</span>
                                         
                                             </td>
                                             <td>
@@ -838,10 +849,9 @@
                         </section>
                     
                         <section class="sw-responses">
-                                <p><a href="#sw-default-produces">Uses default content-types: </a>
-                                    <span class="label label-default">application/json</span> 
-                                </p>
-                            
+                                <p><span class="label label-default">application/vnd.gwentapi.variation+json; type=collection</span> 
+                    </p>
+                    
                             <dl>
                                     <dt class="sw-response-200">
                                         200 OK
@@ -963,7 +973,7 @@
                                         </td>
                                             <td>query</td>
                                             <td><span class="json-property-type">integer</span>
-                                        <span class="json-property-range" title="Value limits"></span>
+                                        <span class="json-property-range" title="Value limits">, { x ∈ ℤ | x ≥ 0 }</span>
                                         
                                             </td>
                                             <td>
@@ -988,10 +998,9 @@
                         </section>
                     
                         <section class="sw-responses">
-                                <p><a href="#sw-default-produces">Uses default content-types: </a>
-                                    <span class="label label-default">application/json</span> 
-                                </p>
-                            
+                                <p><span class="label label-default">application/vnd.gwentapi.variation+json</span> 
+                    </p>
+                    
                             <dl>
                                     <dt class="sw-response-200">
                                         200 OK
@@ -1068,10 +1077,9 @@
                     
                     
                         <section class="sw-responses">
-                                <p><a href="#sw-default-produces">Uses default content-types: </a>
-                                    <span class="label label-default">application/json</span> 
-                                </p>
-                            
+                                <p><span class="label label-default">application/vnd.gwentapi.category+json; type=collection</span> 
+                    </p>
+                    
                             <dl>
                                     <dt class="sw-response-200">
                                         200 OK
@@ -1177,10 +1185,9 @@
                         </section>
                     
                         <section class="sw-responses">
-                                <p><a href="#sw-default-produces">Uses default content-types: </a>
-                                    <span class="label label-default">application/json</span> 
-                                </p>
-                            
+                                <p><span class="label label-default">application/vnd.gwentapi.category+json</span> 
+                    </p>
+                    
                             <dl>
                                     <dt class="sw-response-200">
                                         200 OK
@@ -1257,10 +1264,9 @@
                     
                     
                         <section class="sw-responses">
-                                <p><a href="#sw-default-produces">Uses default content-types: </a>
-                                    <span class="label label-default">application/json</span> 
-                                </p>
-                            
+                                <p><span class="label label-default">application/vnd.gwentapi.faction+json; type=collection</span> 
+                    </p>
+                    
                             <dl>
                                     <dt class="sw-response-200">
                                         200 OK
@@ -1366,10 +1372,9 @@
                         </section>
                     
                         <section class="sw-responses">
-                                <p><a href="#sw-default-produces">Uses default content-types: </a>
-                                    <span class="label label-default">application/json</span> 
-                                </p>
-                            
+                                <p><span class="label label-default">application/vnd.gwentapi.faction+json</span> 
+                    </p>
+                    
                             <dl>
                                     <dt class="sw-response-200">
                                         200 OK
@@ -1446,10 +1451,9 @@
                     
                     
                         <section class="sw-responses">
-                                <p><a href="#sw-default-produces">Uses default content-types: </a>
-                                    <span class="label label-default">application/json</span> 
-                                </p>
-                            
+                                <p><span class="label label-default">application/vnd.gwentapi.group+json; type=collection</span> 
+                    </p>
+                    
                             <dl>
                                     <dt class="sw-response-200">
                                         200 OK
@@ -1555,10 +1559,9 @@
                         </section>
                     
                         <section class="sw-responses">
-                                <p><a href="#sw-default-produces">Uses default content-types: </a>
-                                    <span class="label label-default">application/json</span> 
-                                </p>
-                            
+                                <p><span class="label label-default">application/vnd.gwentapi.group+json</span> 
+                    </p>
+                    
                             <dl>
                                     <dt class="sw-response-200">
                                         200 OK
@@ -1635,10 +1638,9 @@
                     
                     
                         <section class="sw-responses">
-                                <p><a href="#sw-default-produces">Uses default content-types: </a>
-                                    <span class="label label-default">application/json</span> 
-                                </p>
-                            
+                                <p><span class="label label-default">application/vnd.gwentapi.rarity+json; type=collection</span> 
+                    </p>
+                    
                             <dl>
                                     <dt class="sw-response-200">
                                         200 OK
@@ -1744,10 +1746,9 @@
                         </section>
                     
                         <section class="sw-responses">
-                                <p><a href="#sw-default-produces">Uses default content-types: </a>
-                                    <span class="label label-default">application/json</span> 
-                                </p>
-                            
+                                <p><span class="label label-default">application/vnd.gwentapi.rarity+json</span> 
+                    </p>
+                    
                             <dl>
                                     <dt class="sw-response-200">
                                         200 OK
