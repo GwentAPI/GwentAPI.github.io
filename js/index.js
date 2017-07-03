@@ -1,4 +1,4 @@
-var host = "http://localhost:8080";
+var host = "https://api.gwentapi.com";
 
 function listResources(){
 	var url = host + "/v0";
@@ -13,7 +13,7 @@ function listResources(){
 }
 
 function retrieveCard(){
-	var url = host + "/v0/cards/triss-mistress-of-magic";
+	var url = host + "/v0/cards/w2vI6R7qShKzShyZXWpGIQ";
 
 	$("#RetrieveCardLink").attr("href", url);
 	$("#RetrieveCardLink").text(url);
