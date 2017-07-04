@@ -14,50 +14,36 @@ Modified by Tristan Savaria 14/7/2016
 
     <title>GwentAPI</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="./css/materialize.min.css">
+	<link rel="stylesheet" href="./css/index.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="./js/materialize.min.js"></script>
 
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="./css/global.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Custom CSS -->
-    <style>
-    body {
-        padding-top: 70px;
-        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    }
-    </style>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
 </head>
 
 <body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="./index.html">GwentAPI</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                	<li>
-                		<a href="./swagger/index.html">API Documentation</a>
-                	</li>
+    <header>
+        <div id="topMessage" class="light-blue darken-2">
+            <p class="center white-text">The website is under construction</p>
+        	<p class="center white-text">The version of the API is currently v0.5.8</p>
+        </div>
+        <!-- Navigation -->
+        <nav class="light-blue lighten-1" role="navigation">
+            <div class="nav-wrapper container">
+                <a href="./index.html" class="brand-logo">GwentAPI</a>
+                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a href="./swagger/index.html">API Documentation</a>
+                    </li>
                     <li>
                         <a href="./about.html">About</a>
                     </li>
@@ -65,36 +51,83 @@ Modified by Tristan Savaria 14/7/2016
                         <a href="./contact.html">Contact</a>
                     </li>
                 </ul>
+                <ul id="nav-mobile" class="side-nav">
+                    <li>
+                        <a href="./swagger/index.html">API Documentation</a>
+                    </li>
+                    <li>
+                        <a href="./about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+                <!-- /.navbar-collapse -->
             </div>
-            <!-- /.navbar-collapse -->
+            <!-- /.container -->
+        </nav>
+    </header>
+    <div class="container">
+        <div class="section no-pad-bot">
+            <h1 class="header center">GwentAPI<sup>Beta</sup></h1>
+            <div class="row center">
+                <h5 class="header col s12 light">RESTful API for GWENT®: The Witcher Card Game</h5>
+                <h5 class="header col s12 light">Created by the community for the community</h5>
+            </div>
         </div>
-        <!-- /.container -->
-    </nav>
-
+        <br>
+        <br>
+    </div>
+    <div class="container">
+        <div class="section">
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="center icon-block">
+                        <h2 class="light-blue-text">
+    						<i class="medium material-icons">flash_on</i>
+    					</h2>
+                        <h5>Speeds up development</h5>
+                        <p class="light">
+                            We did most of the heavy lifting for you to provide all the essential data. Just connect to the API and start developing your app straight away.
+                        </p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="center icon-block">
+                        <h2 class="light-blue-text">
+    						<i class="medium material-icons">group</i>
+    					</h2>
+                        <h5>User Experience Focused</h5>
+                        <p class="light">
+                            By listening and working closely with the community, we are able to develop the best service to meet your need.
+                        </p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="center icon-block">
+                        <h2 class="light-blue-text">
+    						<i class="medium material-icons">settings</i>
+    					</h2>
+                        <h5>Easy to use</h5>
+                        <p class="light">
+                            With our well documented HATEOAS architecture, starting to use GwentAPI is as easy as pie.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Page Content -->
     <div class="container">
-
         <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1>GwentAPI<sup>Beta</sup></h1>
-                <h2>RESTful API for GWENT®: The Witcher Card Game</h2>
-                <p class="lead">Open for testing and feedback!</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <p class="lead">The version of the API is currently v0.5. Learn <a href="./about.html#v0">why</a>.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-            	<h2>API</h2>
-            	<h3>Overview</h3>
-                <p>You can access the API at <a href="https://api.gwentapi.com/v0">api.gwentapi.com/v0</a></p>
+            <div class="col l12">
+                <h2>API</h2>
+                <h3>Overview</h3>
+                <p>You can access the API at <a href="https://api.gwentapi.com/v0">api.gwentapi.com/v0</a>
+                </p>
                 <h4>List resources</h4>
                 <a id="ListResourceExampleLink" href=""></a>
                 <pre id="ListResourceExample" class="pre-scrollable">
-
                 </pre>
                 <h4>List all cards</h4>
                 <a id="ListCardsLink" href=""></a>
@@ -109,10 +142,10 @@ Modified by Tristan Savaria 14/7/2016
         </div>
         <!-- /.row -->
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col l12">
                 <h3>Endpoints</h3>
                 <p>GwentAPI currently support the following endpoints. More will follow.</p>
-                <table class="table table-striped">
+                <table class="striped bordered">
                     <tr>
                         <th>URL</th>
                         <th>Method</th>
@@ -149,9 +182,9 @@ Modified by Tristan Savaria 14/7/2016
                         <td>Return all cards from the corresponding rarity.</td>
                     </tr>
                     <tr>
-                        <td>https://api.gwentapi.com/v0/cards/:id/artworks</td>
+                        <td>https://api.gwentapi.com/v0/cards/:id/variations</td>
                         <td>GET</td>
-                        <td>Return the artworks of a specific card.</td>
+                        <td>Return the variations of a specific card.</td>
                     </tr>
                     <tr>
                         <td>https://api.gwentapi.com/v0/factions/</td>
@@ -164,29 +197,14 @@ Modified by Tristan Savaria 14/7/2016
                         <td>Return a specific card faction.</td>
                     </tr>
                     <tr>
-                        <td>https://api.gwentapi.com/v0/glyphs</td>
+                        <td>https://api.gwentapi.com/v0/categories</td>
                         <td>GET</td>
-                        <td>Return all glyphs.</td>
+                        <td>Return all categories.</td>
                     </tr>
                     <tr>
-                        <td>https://api.gwentapi.com/v0/glyphs/:id</td>
+                        <td>https://api.gwentapi.com/v0/categories/:id</td>
                         <td>GET</td>
-                        <td>Return a specific glyph.</td>
-                    </tr>
-                    <tr>
-                        <td>https://api.gwentapi.com/v0/patches/</td>
-                        <td>GET</td>
-                        <td>Return all game patches.</td>
-                    </tr>
-                    <tr>
-                        <td>https://api.gwentapi.com/v0/patches/:id</td>
-                        <td>GET</td>
-                        <td>Return a specific game patch.</td>
-                    </tr>
-                    <tr>
-                        <td>https://api.gwentapi.com/v0/patches/latest</td>
-                        <td>GET</td>
-                        <td>Return the latest game patch.</td>
+                        <td>Return a specific category.</td>
                     </tr>
                     <tr>
                         <td>https://api.gwentapi.com/v0/rarities/</td>
@@ -199,14 +217,14 @@ Modified by Tristan Savaria 14/7/2016
                         <td>Return a specific card rarity.</td>
                     </tr>
                     <tr>
-                        <td>https://api.gwentapi.com/v0/types/</td>
+                        <td>https://api.gwentapi.com/v0/groups/</td>
                         <td>GET</td>
-                        <td>Return all card types.</td>
+                        <td>Return all card groups.</td>
                     </tr>
                     <tr>
-                        <td>https://api.gwentapi.com/v0/types/:id</td>
+                        <td>https://api.gwentapi.com/v0/groups/:id</td>
                         <td>GET</td>
-                        <td>Return a specific card type.</td>
+                        <td>Return a specific card group.</td>
                     </tr>
                 </table>
             </div>
@@ -214,21 +232,45 @@ Modified by Tristan Savaria 14/7/2016
         <!-- /.row -->
 
     </div>
-    <!-- /.container -->
-    <footer>
-        <hr>
+    <div class="section no-pad-bot light-blue lighten-1 white-text">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <ul class="list-unstyled">
+            <div class="row center">
+                <h5 class="header col s12 light">How is GwentAPI built?</h5>
+                <ul>
+                	<li>The core of the service is built around a Go application</li>
+                	<li>Proxied by Nginx</li>
+                	<li>Hosted by DigitalOcean</li>
+                	<li>With data stored inside a mongoDB cluster</li>
+                	<li>Everything delivered to you with little delay thanks to CloudFlare</li>
+                </ul>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+    <div class="section no-pad-bot grey lighten-3">
+        <div class="container">
+            <div class="row center">
+                <h5 class="header col s12 light">Want to contribute?</h5>
+                <a href="https://github.com/GwentAPI/gwentapi" class="waves-effect waves-light btn">GitHub</a>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer grey darken-3">
+        <div class="container">
+            <div class="row center">
+                <div class="col s12">
+                    <h5 class="white-text">You can follow GwentAPI</h5>
+                    <ul>
                         <li>
-                            <a href="https://twitter.com/GwentAPI" class="twitter-follow-button" data-show-screen-name="false" data-show-count="false">Follow @GwentAPI</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            <a href="https://twitter.com/GwentAPI" class="twitter-follow-button" data-show-screen-name="false" data-show-count="false">Follow @GwentAPI</a>
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
                             <!-- Place this tag where you want the button to render. -->
                             <a class="github-button" href="https://github.com/tri125" aria-label="Follow @tri125 on GitHub">Follow @tri125</a>
-                        </li>
-                        <li>
-                            <strong>Disclaimer: The textual information and all images presented through this API about GWENT®: The Witcher Card Game is copyrighted by CD Projekt RED</strong>
                         </li>
                     </ul>
                 </div>
@@ -236,15 +278,24 @@ Modified by Tristan Savaria 14/7/2016
             <!-- /.row -->
 
         </div>
+        <div class="footer-copyright grey darken-3">
+            <div class="container">
+                <ul>
+                    <li>
+                        GwentAPI is an independant project created by fans and is not associated to CD Projekt RED.
+                    </li>
+                    <li>
+                        Disclaimer: The textual information and all images presented through this API about GWENT®: The Witcher Card Game is copyrighted by CD Projekt RED.
+                    </li>
+                </ul>
+
+            </div>
+        </div>
     </footer>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-	<script src="./js/index.js"></script>
-	<!-- Place this tag in your head or just before your close body tag. -->
-	<script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="./js/index.js"></script>
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
 
 </body>
 

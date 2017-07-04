@@ -39,6 +39,7 @@ function retrieveCards(){
 
 
 $(document).ready(function() {
+	$(".button-collapse").sideNav();
 	listResources();
 	retrieveCard();
 	retrieveCards();
