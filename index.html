@@ -19,10 +19,11 @@ Modified by Tristan Savaria 14/7/2016
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="./css/materialize.min.css">
+    <link rel="stylesheet" href="./css/prism.css">
 	<link rel="stylesheet" href="./css/index.css">
     <!-- Compiled and minified JavaScript -->
     <script src="./js/materialize.min.js"></script>
-
+    <script src="./js/prism.js"></script>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -117,34 +118,58 @@ Modified by Tristan Savaria 14/7/2016
             </div>
         </div>
     </div>
-    <!-- Page Content -->
     <div class="container">
-        <div class="row">
-            <div class="col l12">
-                <h2>API</h2>
-                <h3>Overview</h3>
+        <div id="features" class="row">
+            <div class="col s12 center">
+                <h3 class="light-blue lighten-1 white-text">Features</h3>
                 <p>You can access the API at <a href="https://api.gwentapi.com/v0">api.gwentapi.com/v0</a>
                 </p>
-                <h4>List resources</h4>
-                <a id="ListResourceExampleLink" href=""></a>
-                <pre id="ListResourceExample" class="pre-scrollable">
-                </pre>
-                <h4>List all cards</h4>
-                <a id="ListCardsLink" href=""></a>
-                <p>Not shown in this example at the moment, but by default it will list 20 cards.</p>
-                <pre id="ListCards" class="pre-scrollable">
-                </pre>
-                <h4>Retrieve a card</h4>
-                <a id="RetrieveCardLink" href=""></a>
-                <pre id="RetrieveCard" class="pre-scrollable">
-                </pre>
+            </div>
+            <div class="col s12 m6">
+            	<div class="card-panel orange darken-1 white-text">
+                	<h4>List all cards</h4>
+                </div>
+            </div>
+            <div class="col s12 m6">
+            	<div class="card-panel orange darken-1 white-text">
+                	<h4>Retrieve a specific card</h4>
+            	</div>
+            </div>
+            <div class="col s12 m6">
+            	<div class="card-panel orange darken-1 white-text">
+                	<h4>Search a card by name</h4>
+            	</div>
+            </div>
+            <div class="col s12 m6">
+            	<div class="card-panel orange darken-1 white-text">
+                	<h4>Retrieve every cards from a faction</h4>
+            	</div>
+            </div>
+            <div class="col s12 m6">
+            	<div class="card-panel orange darken-1 white-text">
+                	<h4>Obtain the card artworks</h4>
+                </div>
+            </div>
+            <div class="col s12 m6">
+            	<div class="card-panel orange darken-1 white-text">
+                	<h4>Retrieve every cards of a specific rarity</h4>
+                </div>
+            </div>
+            <div class="col s12 m6">
+            	<div class="card-panel orange darken-1 white-text">
+                	<h4>And many more!</h4>
+                </div>
             </div>
         </div>
+    </div>
+    <!-- Page Content -->
+    <div class="container">
         <!-- /.row -->
         <div class="row">
-            <div class="col l12">
-                <h3>Endpoints</h3>
-                <p>GwentAPI currently support the following endpoints. More will follow.</p>
+            <div class="col l12 center">
+                <h3 class="grey lighten-3">Endpoints</h3>
+                <p>GwentAPI currently support the following endpoints.</p>
+                <p>Read the <a href="./swagger/index.html">API documentation</a> for the most up-to-date information.</p>
                 <table class="striped bordered">
                     <tr>
                         <th>URL</th>

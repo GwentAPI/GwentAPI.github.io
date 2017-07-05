@@ -1,3 +1,7 @@
 #topMessage p{
 	margin: 0;
 }
+
+pre {
+	max-height: 30em;
+}
