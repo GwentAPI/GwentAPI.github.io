@@ -166,92 +166,100 @@ Modified by Tristan Savaria 14/7/2016
     <div class="container">
         <!-- /.row -->
         <div class="row">
-            <div class="col l12 center">
+            <div class="col s12 center">
                 <h3 class="grey lighten-3">Endpoints</h3>
                 <p>GwentAPI currently support the following endpoints.</p>
                 <p>Read the <a href="./swagger/index.html">API documentation</a> for the most up-to-date information.</p>
-                <table class="striped bordered">
-                    <tr>
-                        <th>URL</th>
-                        <th>Method</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td>https://api.gwentapi.com/v0/</td>
-                        <td>GET</td>
-                        <td>Return a mapping of resources name to href.</td>
-                    </tr>
-                    <tr>
-                        <td>https://api.gwentapi.com/v0/cards/</td>
-                        <td>GET</td>
-                        <td>Return all cards.</td>
-                    </tr>
-                    <tr>
-                        <td>https://api.gwentapi.com/v0/cards/:id</td>
-                        <td>GET</td>
-                        <td>Return a specific card.</td>
-                    </tr>
-                    <tr>
-                        <td>https://api.gwentapi.com/v0/cards/leaders</td>
-                        <td>GET</td>
-                        <td>Return all leader cards.</td>
-                    </tr>
-                    <tr>
-                        <td>https://api.gwentapi.com/v0/cards/factions/:factionID</td>
-                        <td>GET</td>
-                        <td>Return all cards from the corresponding faction.</td>
-                    </tr>
-                    <tr>
-                        <td>https://api.gwentapi.com/v0/cards/rarities/:idRarity</td>
-                        <td>GET</td>
-                        <td>Return all cards from the corresponding rarity.</td>
-                    </tr>
-                    <tr>
-                        <td>https://api.gwentapi.com/v0/cards/:id/variations</td>
-                        <td>GET</td>
-                        <td>Return the variations of a specific card.</td>
-                    </tr>
-                    <tr>
-                        <td>https://api.gwentapi.com/v0/factions/</td>
-                        <td>GET</td>
-                        <td>Return all card factions.</td>
-                    </tr>
-                    <tr>
-                        <td>https://api.gwentapi.com/v0/factions/:id</td>
-                        <td>GET</td>
-                        <td>Return a specific card faction.</td>
-                    </tr>
-                    <tr>
-                        <td>https://api.gwentapi.com/v0/categories</td>
-                        <td>GET</td>
-                        <td>Return all categories.</td>
-                    </tr>
-                    <tr>
-                        <td>https://api.gwentapi.com/v0/categories/:id</td>
-                        <td>GET</td>
-                        <td>Return a specific category.</td>
-                    </tr>
-                    <tr>
-                        <td>https://api.gwentapi.com/v0/rarities/</td>
-                        <td>GET</td>
-                        <td>Return all card rarities.</td>
-                    </tr>
-                    <tr>
-                        <td>https://api.gwentapi.com/v0/rarities/:id</td>
-                        <td>GET</td>
-                        <td>Return a specific card rarity.</td>
-                    </tr>
-                    <tr>
-                        <td>https://api.gwentapi.com/v0/groups/</td>
-                        <td>GET</td>
-                        <td>Return all card groups.</td>
-                    </tr>
-                    <tr>
-                        <td>https://api.gwentapi.com/v0/groups/:id</td>
-                        <td>GET</td>
-                        <td>Return a specific card group.</td>
-                    </tr>
-                </table>
+                <div class="row">
+                	<div class="col s12">
+		                <table class="striped bordered">
+		                	<thead>
+			                    <tr>
+			                        <th>URL</th>
+			                        <th>Method</th>
+			                        <th>Description</th>
+			                    </tr>
+		                    </thead>
+		                    <tbody>
+			                    <tr>
+			                        <td>https://api.gwentapi.com/v0/</td>
+			                        <td>GET</td>
+			                        <td>Return a mapping of resources name to href.</td>
+			                    </tr>
+			                    <tr>
+			                        <td>https://api.gwentapi.com/v0/cards/</td>
+			                        <td>GET</td>
+			                        <td>Return all cards.</td>
+			                    </tr>
+			                    <tr>
+			                        <td>https://api.gwentapi.com/v0/cards/:id</td>
+			                        <td>GET</td>
+			                        <td>Return a specific card.</td>
+			                    </tr>
+			                    <tr>
+			                        <td>https://api.gwentapi.com/v0/cards/leaders</td>
+			                        <td>GET</td>
+			                        <td>Return all leader cards.</td>
+			                    </tr>
+			                    <tr>
+			                        <td>https://api.gwentapi.com/v0/cards/factions/:factionID</td>
+			                        <td>GET</td>
+			                        <td>Return all cards from the corresponding faction.</td>
+			                    </tr>
+			                    <tr>
+			                        <td>https://api.gwentapi.com/v0/cards/rarities/:idRarity</td>
+			                        <td>GET</td>
+			                        <td>Return all cards from the corresponding rarity.</td>
+			                    </tr>
+			                    <tr>
+			                        <td>https://api.gwentapi.com/v0/cards/:id/variations</td>
+			                        <td>GET</td>
+			                        <td>Return the variations of a specific card.</td>
+			                    </tr>
+			                    <tr>
+			                        <td>https://api.gwentapi.com/v0/factions/</td>
+			                        <td>GET</td>
+			                        <td>Return all card factions.</td>
+			                    </tr>
+			                    <tr>
+			                        <td>https://api.gwentapi.com/v0/factions/:id</td>
+			                        <td>GET</td>
+			                        <td>Return a specific card faction.</td>
+			                    </tr>
+			                    <tr>
+			                        <td>https://api.gwentapi.com/v0/categories</td>
+			                        <td>GET</td>
+			                        <td>Return all categories.</td>
+			                    </tr>
+			                    <tr>
+			                        <td>https://api.gwentapi.com/v0/categories/:id</td>
+			                        <td>GET</td>
+			                        <td>Return a specific category.</td>
+			                    </tr>
+			                    <tr>
+			                        <td>https://api.gwentapi.com/v0/rarities/</td>
+			                        <td>GET</td>
+			                        <td>Return all card rarities.</td>
+			                    </tr>
+			                    <tr>
+			                        <td>https://api.gwentapi.com/v0/rarities/:id</td>
+			                        <td>GET</td>
+			                        <td>Return a specific card rarity.</td>
+			                    </tr>
+			                    <tr>
+			                        <td>https://api.gwentapi.com/v0/groups/</td>
+			                        <td>GET</td>
+			                        <td>Return all card groups.</td>
+			                    </tr>
+			                    <tr>
+			                        <td>https://api.gwentapi.com/v0/groups/:id</td>
+			                        <td>GET</td>
+			                        <td>Return a specific card group.</td>
+			                    </tr>
+		                    </tbody>
+		                </table>
+                	</div>
+                </div>
             </div>
         </div>
         <!-- /.row -->
