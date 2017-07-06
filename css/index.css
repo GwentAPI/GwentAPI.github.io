@@ -5,3 +5,7 @@
 pre {
 	max-height: 30em;
 }
+
+#staggered-getStarted li {
+	opacity: 0;
+}

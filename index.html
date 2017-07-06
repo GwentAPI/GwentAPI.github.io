@@ -34,22 +34,21 @@ Modified by Tristan Savaria 14/7/2016
     <header>
         <div id="topMessage" class="light-blue darken-2">
             <p class="center white-text">The website is under construction</p>
-        	<p class="center white-text">The version of the API is currently v0.5.8</p>
         </div>
         <!-- Navigation -->
         <nav class="light-blue lighten-1" role="navigation">
             <div class="nav-wrapper container">
-                <a href="./index.html" class="brand-logo">GwentAPI</a>
+                <a href="./index.html" class="brand-logo">GwentAPI<span class="new badge teal" data-badge-caption="v0.5.8"></span></a>
                 <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li>
                         <a href="./swagger/index.html">API Documentation</a>
                     </li>
                     <li>
-                        <a href="./about.html">About</a>
+                        <a href="#">Examples<span class="new badge teal" data-badge-caption="Coming Soon"></span></a>
                     </li>
                     <li>
-                        <a href="./contact.html">Contact</a>
+                        <a href="#contactModal">Contact</a>
                     </li>
                 </ul>
                 <ul id="nav-mobile" class="side-nav">
@@ -57,10 +56,10 @@ Modified by Tristan Savaria 14/7/2016
                         <a href="./swagger/index.html">API Documentation</a>
                     </li>
                     <li>
-                        <a href="./about.html">About</a>
+                        <a href="#">Examples<span class="new badge teal" data-badge-caption="Coming Soon"></span></a>
                     </li>
                     <li>
-                        <a href="./contact.html">Contact</a>
+                        <a href="#contactModal">Contact</a>
                     </li>
                 </ul>
                 <!-- /.navbar-collapse -->
@@ -167,82 +166,26 @@ Modified by Tristan Savaria 14/7/2016
         <!-- /.row -->
         <div class="row">
             <div class="col s12 center">
-                <h3 class="grey lighten-3">Endpoints</h3>
-                <p>GwentAPI currently support the following endpoints.</p>
-                <p>Read the <a href="./swagger/index.html">API documentation</a> for the most up-to-date information.</p>
-                <div class="row">
-                	<div class="col s12">
-		                <table class="striped bordered">
-		                	<thead>
-			                    <tr>
-			                        <th>URL</th>
-			                        <th>Description</th>
-			                    </tr>
-		                    </thead>
-		                    <tbody>
-			                    <tr>
-			                        <td>https://api.gwentapi.com/v0/</td>
-			                        <td>Return a mapping of resources name to href.</td>
-			                    </tr>
-			                    <tr>
-			                        <td>https://api.gwentapi.com/v0/cards/</td>
-			                        <td>Return all cards.</td>
-			                    </tr>
-			                    <tr>
-			                        <td>https://api.gwentapi.com/v0/cards/:id</td>
-			                        <td>Return a specific card.</td>
-			                    </tr>
-			                    <tr>
-			                        <td>https://api.gwentapi.com/v0/cards/leaders</td>
-			                        <td>Return all leader cards.</td>
-			                    </tr>
-			                    <tr>
-			                        <td>https://api.gwentapi.com/v0/cards/factions/:factionID</td>
-			                        <td>Return all cards from the corresponding faction.</td>
-			                    </tr>
-			                    <tr>
-			                        <td>https://api.gwentapi.com/v0/cards/rarities/:idRarity</td>
-			                        <td>Return all cards from the corresponding rarity.</td>
-			                    </tr>
-			                    <tr>
-			                        <td>https://api.gwentapi.com/v0/cards/:id/variations</td>
-			                        <td>Return the variations of a specific card.</td>
-			                    </tr>
-			                    <tr>
-			                        <td>https://api.gwentapi.com/v0/factions/</td>
-			                        <td>Return all card factions.</td>
-			                    </tr>
-			                    <tr>
-			                        <td>https://api.gwentapi.com/v0/factions/:id</td>
-			                        <td>Return a specific card faction.</td>
-			                    </tr>
-			                    <tr>
-			                        <td>https://api.gwentapi.com/v0/categories</td>
-			                        <td>Return all categories.</td>
-			                    </tr>
-			                    <tr>
-			                        <td>https://api.gwentapi.com/v0/categories/:id</td>
-			                        <td>Return a specific category.</td>
-			                    </tr>
-			                    <tr>
-			                        <td>https://api.gwentapi.com/v0/rarities/</td>
-			                        <td>Return all card rarities.</td>
-			                    </tr>
-			                    <tr>
-			                        <td>https://api.gwentapi.com/v0/rarities/:id</td>
-			                        <td>Return a specific card rarity.</td>
-			                    </tr>
-			                    <tr>
-			                        <td>https://api.gwentapi.com/v0/groups/</td>
-			                        <td>Return all card groups.</td>
-			                    </tr>
-			                    <tr>
-			                        <td>https://api.gwentapi.com/v0/groups/:id</td>
-			                        <td>Return a specific card group.</td>
-			                    </tr>
-		                    </tbody>
-		                </table>
-                	</div>
+            	<div>
+	            	<ul id="staggered-getStarted">
+	            		<li>
+	 	                	<h3 class="grey lighten-3">How to get started?</h3>           		
+	            		</li>
+						<li>
+		                	<h5 class="header col s12 light">Read the API documentation</h5>
+						</li>
+						<li>
+		                	<a href="./swagger/index.html" class="waves-effect waves-light btn pulse">Doc</a>
+						</li>
+						<li>
+		                	<h5 class="header col s12 light">
+		                		<a href="https://api.gwentapi.com/v0">Access the API</a>
+		                	</h5>
+						</li>
+						<li>
+		                	<h5 class="header col s12 light">Or use a client library</h5>
+						</li>
+	                </ul>
                 </div>
             </div>
         </div>
@@ -299,7 +242,7 @@ Modified by Tristan Savaria 14/7/2016
             <div class="container">
                 <ul>
                     <li>
-                        GwentAPI is an independant project created by fans and is not associated to CD Projekt RED.
+                        GwentAPI is an independant project created by fans and is not associated or endorsed by CD Projekt RED.
                     </li>
                     <li>
                         Disclaimer: The textual information and all images presented through this API about GWENT®: The Witcher Card Game is copyrighted by CD Projekt RED.
@@ -309,6 +252,34 @@ Modified by Tristan Savaria 14/7/2016
             </div>
         </div>
     </footer>
+  	<!-- Modal Structure -->
+	<div id="contactModal" class="modal">
+    	<div class="modal-content">
+      		<h4>Contact</h4>
+      		<ul>
+      			<li>
+      				<p>
+      					You can reach us via twitter 
+      					<a href="https://twitter.com/GwentAPI">@GwentAPI</a>.
+      				</p>
+      			</li>
+      			<li>
+      				<p>
+      					Via email <a href="mailto:api.gwent@gmail.com">here</a>.
+      				</p>
+      			</li>
+      			<li>
+      				<p>
+      					For bug report, reporting erroneous data or to request a feature, open a ticket on the 
+      					<a href="https://github.com/GwentAPI/gwentapi/issues">project</a> page.
+      				</p>
+      			</li>
+      		</ul>
+    	</div>
+  </div>
+
+
+
 
     <script src="./js/index.js"></script>
     <!-- Place this tag in your head or just before your close body tag. -->
