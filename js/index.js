@@ -39,7 +39,7 @@ function retrieveCards(){
 
 function scrollFireInit() {
     var options = [
-      {selector: '#staggered-getStarted', offset: 0, callback: function(el) {
+      {selector: '#staggered-getStarted', offset: -10, callback: function(el) {
         Materialize.showStaggeredList($(el));
       } }
     ];
