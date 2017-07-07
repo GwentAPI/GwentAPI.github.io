@@ -86,6 +86,11 @@
                         <td><p>cardLeader card</p>
         </td>
                     </tr>
+                    <tr>
+                        <td><a href="#operation--v0-cards-rarities--rarityID--get">GET /v0/cards/rarities/{rarityID}</a></td>
+                        <td><p>cardRarity card</p>
+        </td>
+                    </tr>
                 </tbody>
             </table>
             <h3 id="tag-category" class="swagger-summary-tag">Tag: category</h3>
@@ -299,7 +304,7 @@
                                         <span class="json-property-range" title="Value limits"></span>
                                         
                                             <span class="json-property-range" title="String length limits">
-                                                    (3 to 10 chars)
+                                                    (3 to 100 chars)
                                             </span>
                                             </td>
                                             <td>
@@ -684,6 +689,197 @@
                                         
                                             </td>
                                             <td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                If-Modified-Since
+                                            <td><p>DateTime in RFC1123 format.</p>
+                                        </td>
+                                            <td>header</td>
+                                            <td><span class="json-property-type">string</span>
+                                        <span class="json-property-range" title="Value limits"></span>
+                                        
+                                            </td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                        </section>
+                    
+                        <section class="sw-responses">
+                                <p><span class="label label-default">application/vnd.gwentapi.pagecard+json</span> 
+                    </p>
+                    
+                            <dl>
+                                    <dt class="sw-response-200">
+                                        200 OK
+                                    
+                                    </dt>
+                                    <dd class="sw-response-200">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <p>OK</p>
+                                            
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                
+                                                <div class="col-md-6 sw-response-model">
+                                                <div  class="panel panel-definition">
+                                                    <div class="panel-body">
+                                                                <a class="json-schema-ref" href="#/definitions/GwentapiPagecard">GwentapiPagecard</a>
+                                                    </div>
+                                                </div></div>
+                                            
+                                                    <div class="col-md-12">
+                                                        <section class="sw-response-headers">
+                                                            <table class="table">
+                                                                <thead>
+                                                                <tr>
+                                                                    <th class="sw-response-header-name"></th>
+                                                                    <th class="sw-response-header-description"></th>
+                                                                    <th class="sw-response-header-data-type"></th>
+                                                                </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                        <tr class="sw-response-header-Last-Modified">
+                                                                            <td>
+                                                                                Last-Modified
+                                                                            <td><p>DateTime in RFC1123 format.</p>
+                                                                        </td>
+                                                                            <td>
+                                                                                <span class="json-property-type">string</span>
+                                                                                <span class="json-property-range" title="Value limits"></span>
+                                                                                
+                                                                            </td>
+                                                                        </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </section>
+                                                    </div>
+                                            </div>                </dd>
+                                    <dt class="sw-response-304">
+                                        304 Not Modified
+                                    
+                                    </dt>
+                                    <dd class="sw-response-304">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <p>Not Modified</p>
+                                            
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                
+                                                <div class="col-md-6 sw-response-model">
+                                            </div>
+                                            
+                                            </div>                </dd>
+                                    <dt class="sw-response-404">
+                                        404 Not Found
+                                    
+                                    </dt>
+                                    <dd class="sw-response-404">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <p>Not Found</p>
+                                            
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                
+                                                <div class="col-md-6 sw-response-model">
+                                            </div>
+                                            
+                                            </div>                </dd>
+                                    <dt class="sw-response-500">
+                                        500 Internal Server Error
+                                    
+                                    </dt>
+                                    <dd class="sw-response-500">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <p>Internal Server Error</p>
+                                            
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                
+                                                <div class="col-md-6 sw-response-model">
+                                            </div>
+                                            
+                                            </div>                </dd>
+                            </dl>
+                        </section>
+                </div>
+            </div>    
+        <span id="path--v0-cards-rarities--rarityID-"></span>
+            <div id="operation--v0-cards-rarities--rarityID--get" class="swagger--panel-operation-get panel">
+                <div class="panel-heading">
+                    <div class="operation-summary">cardRarity card</div>
+                    <h3 class="panel-title"><span class="operation-name">GET</span> <strong>/v0/cards/rarities/{rarityID}</strong></h3>
+                        Tags:
+                            <a href="#tag-card">card</a>
+                </div>
+                <div class="panel-body">
+                    <section class="sw-operation-description">
+                        <p>Return all cards with given rarity id.</p>
+            
+                    </section>
+                    
+                        <section class="sw-request-params">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th class="sw-param-name"></th>
+                                    <th class="sw-param-description"></th>
+                                    <th class="sw-param-type"></th>
+                                    <th class="sw-param-data-type"></th>
+                                    <th class="sw-param-annotation"></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                            <td>
+                                                limit
+                                            <td><p>Number of cards to receive</p>
+                                        </td>
+                                            <td>query</td>
+                                            <td><span class="json-property-type">integer</span>
+                                        <span class="json-property-range" title="Value limits">, { x ∈ ℤ | x ≥ 1 }</span>
+                                        
+                                                <span class="json-property-default-value">20</span>
+                                            </td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                offset
+                                            <td><p>Offset of the starting count</p>
+                                        </td>
+                                            <td>query</td>
+                                            <td><span class="json-property-type">integer</span>
+                                        <span class="json-property-range" title="Value limits">, { x ∈ ℤ | x ≥ 0 }</span>
+                                        
+                                            </td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                rarityID
+                                            <td><p>Rarity ID</p>
+                                        </td>
+                                            <td>path</td>
+                                            <td><span class="json-property-type">string</span>
+                                        <span class="json-property-range" title="Value limits"></span>
+                                        
+                                            </td>
+                                            <td>
+                                                    <span class="json-property-required"></span>
                                             </td>
                                         </tr>
                                         <tr>
@@ -2999,7 +3195,7 @@
                                                                             
                                                                             <div class="json-inner-schema">
                                                                                     <section class="json-schema-example">
-                                                                                        <pre><code class="lang-json"><span class="hljs-string">&quot;Dolor laboriosam veniam doloribus.&quot;</span>
+                                                                                        <pre><code class="lang-json"><span class="hljs-string">&quot;Fugiat sint dolor laboriosam veniam.&quot;</span>
                                                                                 </code></pre>
                                                                                 
                                                                                     </section>
@@ -3348,7 +3544,7 @@
                             
                                 </section>
                                 <section class="json-schema-example">
-                                    <pre><code class="lang-json">[<br>    {<br>        &quot;<span class="hljs-attribute">href</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;http://klocko.com/beulah_mcclure&quot;</span></span>,<br>        &quot;<span class="hljs-attribute">name</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;Insectoid&quot;</span><br>    </span>},<br>    {<br>        &quot;<span class="hljs-attribute">href</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;http://klocko.com/beulah_mcclure&quot;</span></span>,<br>        &quot;<span class="hljs-attribute">name</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;Insectoid&quot;</span><br>    </span>}<br>]
+                                    <pre><code class="lang-json">[<br>    {<br>        &quot;<span class="hljs-attribute">href</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;http://klocko.com/beulah_mcclure&quot;</span></span>,<br>        &quot;<span class="hljs-attribute">name</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;Insectoid&quot;</span><br>    </span>},<br>    {<br>        &quot;<span class="hljs-attribute">href</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;http://klocko.com/beulah_mcclure&quot;</span></span>,<br>        &quot;<span class="hljs-attribute">name</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;Insectoid&quot;</span><br>    </span>},<br>    {<br>        &quot;<span class="hljs-attribute">href</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;http://klocko.com/beulah_mcclure&quot;</span></span>,<br>        &quot;<span class="hljs-attribute">name</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;Insectoid&quot;</span><br>    </span>}<br>]
                             </code></pre>
                             
                                 </section>
