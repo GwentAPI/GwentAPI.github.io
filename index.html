@@ -19,6 +19,8 @@ Modified by Tristan Savaria 14/7/2016
     <title>GwentAPI</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/knockout-3.4.2.js"></script>
+    <script src="./js/knockout.mapping-2.4.1.js"></script>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
@@ -51,7 +53,7 @@ Modified by Tristan Savaria 14/7/2016
         <!-- Navigation -->
         <nav class="light-blue lighten-1" role="navigation">
             <div class="nav-wrapper container">
-                <a href="./index.html" class="brand-logo">GwentAPI<span class="new badge teal" data-badge-caption="v0.6.0"></span></a>
+                <a href="./index.html" class="brand-logo">GwentAPI<span id="version" class="new badge teal" data-badge-caption=""></span></a>
                 <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li>
@@ -61,7 +63,7 @@ Modified by Tristan Savaria 14/7/2016
                         <a href="#">Examples<span class="new badge teal" data-badge-caption="Coming Soon"></span></a>
                     </li>
                     <li>
-                        <a href="#contactModal">Contact</a>
+                        <a class="modal-trigger" href="#contactModal">Contact</a>
                     </li>
                 </ul>
                 <ul id="nav-mobile" class="side-nav">
@@ -72,7 +74,7 @@ Modified by Tristan Savaria 14/7/2016
                         <a href="#">Examples<span class="new badge teal" data-badge-caption="Coming Soon"></span></a>
                     </li>
                     <li>
-                        <a href="#contactModal">Contact</a>
+                        <a class="modal-trigger" href="#contactModal">Contact</a>
                     </li>
                 </ul>
                 <!-- /.navbar-collapse -->
